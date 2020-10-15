@@ -104,3 +104,25 @@
 #page-map .map-popup .leaflet-popup-tip-container {
   display: none;
 }
+
+#page-map .button-back {
+  width: 48px;
+  height: 48px;
+
+  border: 0;
+
+  background: #12AFCB;
+  border-radius: 16px;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-map .button-back:hover {
+  background: #17D6EB;
+}
