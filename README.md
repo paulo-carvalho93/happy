@@ -1,14 +1,24 @@
 <div align="center">
 
-# ![](.github/assets/logo.png)
+<p align="center">
+  <img alt="screenshot" src="./.github/assets/logo.png" />
+<p>
+
+<p align="center">	
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/paulo-carvalho93/happy-NLW">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/paulo-carvalho93/happy-NLW">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-blue">
+  
+</p>
 
 **Happy** is a project to connect people and orphanages, aiming to provide greater interactivity of these institutions with people interested in helping children and making their days happier!
 
 The project was developed during the third edition of _Next Level Week_, held by [Rocketseat](https://github.com/Rocketseat) between October 12th and 16th, 2020.
 
-![](https://github.com/rocketseat-education/nlw-03-omnistack/blob/master/.github/happy.png?raw=true)
+<p align="center">
+  <img alt="screenshot" width="650px" src="./.github/assets/happy.png" />
+<p>
 
----
 </div>
 
 # Summary
@@ -17,7 +27,7 @@ The project was developed during the third edition of _Next Level Week_, held by
   - [Backend](#hammer-backend)
   - [Web](#computer-web)
   - [Mobile](#iphone-mobile)
-- [How to run](#boom-howtorun)
+- [How to run](#boom-how-to-run)
   - [Backend](#hammer-backend-1)
   - [Web](#computer-web-1)
   - [Mobile](#iphone-mobile-1)
@@ -27,7 +37,7 @@ The project was developed during the third edition of _Next Level Week_, held by
 
 <div align="center">
 
-![mapbox](https://img.shields.io/badge/mapbox-000?&logoColor=FFF&style=for-the-badge&logo=mapbox)![expo](https://img.shields.io/badge/expo-000020?&logoColor=FFF&style=for-the-badge&logo=expo)![sqlite](https://img.shields.io/badge/sqlite-003b57?&logoColor=FFF&style=for-the-badge&logo=sqlite)![typescript](https://img.shields.io/badge/typescript-007acc?&logoColor=FFF&style=for-the-badge&logo=typescript)![react](https://img.shields.io/badge/react-61dafb?&logoColor=000&style=for-the-badge&logo=react)![openstreetmap](https://img.shields.io/badge/openstreetmap-7ebc6f?&logoColor=FFF&style=for-the-badge&logo=openstreetmap)![node](https://img.shields.io/badge/node.js-33933?&logoColor=FFF&style=for-the-badge&logo=node.js)![leaflet](https://img.shields.io/badge/leaflet-199900?&logoColor=FFF&style=for-the-badge&logo=leaflet)
+![node](https://img.shields.io/badge/node.js-33933?&logoColor=FFF&style=for-the-badge&logo=node.js)![react](https://img.shields.io/badge/react-61dafb?&logoColor=000&style=for-the-badge&logo=react)![typescript](https://img.shields.io/badge/typescript-007acc?&logoColor=FFF&style=for-the-badge&logo=typescript)![mapbox](https://img.shields.io/badge/mapbox-000?&logoColor=FFF&style=for-the-badge&logo=mapbox)![expo](https://img.shields.io/badge/expo-000020?&logoColor=FFF&style=for-the-badge&logo=expo)![sqlite](https://img.shields.io/badge/sqlite-003b57?&logoColor=FFF&style=for-the-badge&logo=sqlite)![openstreetmap](https://img.shields.io/badge/openstreetmap-7ebc6f?&logoColor=FFF&style=for-the-badge&logo=openstreetmap)![leaflet](https://img.shields.io/badge/leaflet-199900?&logoColor=FFF&style=for-the-badge&logo=leaflet)
 
 </div>
 
@@ -37,11 +47,11 @@ The application's _backend_ was developed using [Typescript](https://www.typescr
 
 ## :computer: Web
 
-The _web_ version of the application was developed with [Typescript](https://www.typescriptlang.org/) using the framework [ReactJS](https://reactjs.org/). The _map_ was made using a composition of [Leaflet](https://leafletjs.com/) library and [MapBox] api (https://www.mapbox.com/). Finally, API calls to the backend were made with [axios] (https://www.npmjs.com/package/axios).
+The _web_ version of the application was developed with [Typescript](https://www.typescriptlang.org/) using the framework [ReactJS](https://reactjs.org/). The _map_ was made using a composition of [Leaflet](https://leafletjs.com/) library and [MapBox](https://www.mapbox.com/) API . Finally, API calls to the backend were made with [axios](https://www.npmjs.com/package/axios).
 
 ## :iphone: Mobile
 
-The _mobile_ version of the application was developed with [Typescript](https://www.typescriptlang.org/) language using the framework [React Native](https://reactnative.dev/) and [Expo] (https://expo.io/) to increment the speed of development.
+The _mobile_ version of the application was developed with [Typescript](https://www.typescriptlang.org/) language using the framework [React Native](https://reactnative.dev/) and [Expo](https://expo.io/) to increment the speed of development.
 
 ---
 
