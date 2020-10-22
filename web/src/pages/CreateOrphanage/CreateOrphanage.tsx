@@ -1,19 +1,20 @@
-import React, { useState, FormEvent, ChangeEvent } from "react";
+import React, { useState, useEffect, FormEvent, ChangeEvent } from "react";
 import { Map, Marker, TileLayer } from 'react-leaflet';
 import { LeafletMouseEvent } from 'leaflet';
 import { useHistory } from "react-router-dom";
 
 import { FiPlus } from "react-icons/fi";
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../../components/Sidebar/Sidebar';
 
-import '../styles/pages/create-orphanage.css';
-import mapIcon from "../utils/mapIcon";
-import api from "../services/api";
+import '../CreateOrphanage/create-orphanage.css';
+import mapIcon from "../../utils/mapIcon";
+import api from "../../services/api";
 
 export default function CreateOrphanage() {
   const history = useHistory();
 
   const [position, setPosition] = useState({ latitude: 0, longitude: 0})
+  const [initialPosition, setInitialPosition] = useState({ latitude: 0, longitude: 0});
 
   const [name, setName] = useState('');
   const [about, setAbout] = useState('');
@@ -22,6 +23,16 @@ export default function CreateOrphanage() {
   const [open_on_weekends, setOpenOnWeekends] = useState(true);
   const [images, setImages] = useState<File[]>([]);
   const [previewImages, setPreviewImages] = useState<string[]>([]);
+
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition(position => {
+      setInitialPosition({
+        latitude: position.coords.latitude,
+        longitude: position.coords.longitude,
+      })
+    });
+    
+  }, []);
 
   function handleMapClick(event: LeafletMouseEvent) {
     const { lat, lng } = event.latlng;
@@ -80,10 +91,10 @@ export default function CreateOrphanage() {
       <main>
         <form onSubmit={handleSubmit} className="create-orphanage-form">
           <fieldset>
-            <legend>Dados</legend>
+            <legend>Data</legend>
 
             <Map 
-              center={[-27.2092052,-49.6401092]} 
+              center={[initialPosition.latitude, initialPosition.longitude]}
               style={{ width: '100%', height: 280 }}
               zoom={15}
               onClick={handleMapClick}
@@ -102,7 +113,7 @@ export default function CreateOrphanage() {
             </Map>
 
             <div className="input-block">
-              <label htmlFor="name">Nome</label>
+              <label htmlFor="name">Name</label>
               <input 
                 id="name" 
                 value={name} 
@@ -111,7 +122,7 @@ export default function CreateOrphanage() {
             </div>
 
             <div className="input-block">
-              <label htmlFor="about">Sobre <span>Máximo de 300 caracteres</span></label>
+              <label htmlFor="about">About <span>Max 300 characters</span></label>
               <textarea 
                 id="name" 
                 maxLength={300} 
@@ -121,7 +132,7 @@ export default function CreateOrphanage() {
             </div>
 
             <div className="input-block">
-              <label htmlFor="images">Fotos</label>
+              <label htmlFor="images">Photos</label>
 
               <div className="images-container">
                 {previewImages.map(image => {
@@ -140,10 +151,10 @@ export default function CreateOrphanage() {
           </fieldset>
 
           <fieldset>
-            <legend>Visitação</legend>
+            <legend>Visitation</legend>
 
             <div className="input-block">
-              <label htmlFor="instructions">Instruções</label>
+              <label htmlFor="instructions">Instructions</label>
               <textarea 
                 id="instructions" 
                 value={instructions}
@@ -152,7 +163,7 @@ export default function CreateOrphanage() {
             </div>
 
             <div className="input-block">
-              <label htmlFor="opening_hours">Horário de funcionamento</label>
+              <label htmlFor="opening_hours">Opening hours</label>
               <input 
                 id="opening_hours" 
                 value={opening_hours}
@@ -161,7 +172,7 @@ export default function CreateOrphanage() {
             </div>
 
             <div className="input-block">
-              <label htmlFor="open_on_weekends">Atende fim de semana</label>
+              <label htmlFor="open_on_weekends">Attends weekend?</label>
 
               <div className="button-select">
                 <button 

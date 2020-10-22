@@ -4,11 +4,11 @@ import { FiPlus, FiArrowRight, FiArrowLeft } from 'react-icons/fi';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 import { useHistory } from "react-router-dom";
 
-import mapMarkerImg from '../images/map-marker.svg';
+import mapMarkerImg from '../../images/map-marker.svg';
 
-import '../styles/pages/orphanages-map.css';
-import mapIcon from '../utils/mapIcon';
-import api from '../services/api';
+import '../OrphanageMap/orphanages-map.css';
+import mapIcon from '../../utils/mapIcon';
+import api from '../../services/api';
 
 interface Orphanage {
   id: number;
@@ -19,8 +19,19 @@ interface Orphanage {
 
 function OrphanagesMap() {
   const [orphanages, setOrphanages] = useState<Orphanage[]>([]);
+  const [position, setPosition] = useState({
+    latitude: 0,
+    longitude: 0,
+  });
 
   useEffect(() => {
+    navigator.geolocation.getCurrentPosition(position => {
+      setPosition({
+        latitude: position.coords.latitude,
+        longitude: position.coords.longitude,
+      })
+    });
+    
     api.get('orphanages').then(response => {
       setOrphanages(response.data);
     });
@@ -49,7 +60,7 @@ function OrphanagesMap() {
       </aside>
 
       <Map 
-        center={[-23.7328181,-46.6995142]}
+        center={[position.latitude, position.longitude]}
         zoom={15}
         style={{ width: '100%', height: '100%' }}
       >

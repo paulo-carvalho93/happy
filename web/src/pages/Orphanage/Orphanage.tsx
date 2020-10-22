@@ -3,11 +3,11 @@ import { useParams } from 'react-router-dom';
 import { FiClock, FiInfo } from "react-icons/fi";
 import { Map, Marker, TileLayer } from "react-leaflet";
 
-import Sidebar from '../components/Sidebar';
-import api from "../services/api";
+import Sidebar from '../../components/Sidebar/Sidebar';
+import api from "../../services/api";
 
-import '../styles/pages/orphanage.css';
-import mapIcon from "../utils/mapIcon";
+import '../Orphanage/orphanage.css';
+import mapIcon from "../../utils/mapIcon";
 
 interface Orphanage {
   name: string;

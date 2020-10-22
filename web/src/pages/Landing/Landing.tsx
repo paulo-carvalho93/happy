@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-import '../styles/pages/landing.css';
-import logoImg from '../images/logo.svg';
+import '../Landing/landing.css';
+import logoImg from '../../images/logo.svg';
 
 import { FiArrowRight } from 'react-icons/fi';
 
