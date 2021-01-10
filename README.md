@@ -21,7 +21,7 @@ The project was developed during the third edition of _Next Level Week_, held by
 
 </div>
 
-# Summary
+## Summary
 
 - [Technology](#rocket-technology)
   - [Backend](#hammer-backend)
@@ -33,23 +33,30 @@ The project was developed during the third edition of _Next Level Week_, held by
   - [Mobile](#iphone-mobile-1)
 
 
-# :rocket: Technology
+## :rocket: Technology
 
 <div align="center">
 
-![node](https://img.shields.io/badge/node.js-33933?&logoColor=FFF&style=for-the-badge&logo=node.js)![react](https://img.shields.io/badge/react-61dafb?&logoColor=000&style=for-the-badge&logo=react)![typescript](https://img.shields.io/badge/typescript-007acc?&logoColor=FFF&style=for-the-badge&logo=typescript)![mapbox](https://img.shields.io/badge/mapbox-000?&logoColor=FFF&style=for-the-badge&logo=mapbox)![expo](https://img.shields.io/badge/expo-000020?&logoColor=FFF&style=for-the-badge&logo=expo)![sqlite](https://img.shields.io/badge/sqlite-003b57?&logoColor=FFF&style=for-the-badge&logo=sqlite)![openstreetmap](https://img.shields.io/badge/openstreetmap-7ebc6f?&logoColor=FFF&style=for-the-badge&logo=openstreetmap)![leaflet](https://img.shields.io/badge/leaflet-199900?&logoColor=FFF&style=for-the-badge&logo=leaflet)
+![node](https://img.shields.io/badge/node.js-33933?&logoColor=FFF&style=for-the-badge&logo=node.js)
+![react](https://img.shields.io/badge/react-61dafb?&logoColor=000&style=for-the-badge&logo=react)
+![typescript](https://img.shields.io/badge/typescript-007acc?&logoColor=FFF&style=for-the-badge&logo=typescript)
+![mapbox](https://img.shields.io/badge/mapbox-000?&logoColor=FFF&style=for-the-badge&logo=mapbox)
+![expo](https://img.shields.io/badge/expo-000020?&logoColor=FFF&style=for-the-badge&logo=expo)
+![sqlite](https://img.shields.io/badge/sqlite-003b57?&logoColor=FFF&style=for-the-badge&logo=sqlite)
+![openstreetmap](https://img.shields.io/badge/openstreetmap-7ebc6f?&logoColor=FFF&style=for-the-badge&logo=openstreetmap)
+![leaflet](https://img.shields.io/badge/leaflet-199900?&logoColor=FFF&style=for-the-badge&logo=leaflet)
 
 </div>
 
-## :hammer: Backend
+### :hammer: Backend
 
 The application's _backend_ was developed using [Typescript](https://www.typescriptlang.org/) language using the [NodeJS](https://nodejs.org/en/) framework . The database chosen was [SQLite](https://sqlite.org/index.html) due to the ease of configuration. For creating tables and add new columns we choose ORM [typeorm](https://typeorm.io/#/). The [Yup](https://yarnpkg.com/package/yup) package was also used to validate requests.
 
-## :computer: Web
+### :computer: Web
 
 The _web_ version of the application was developed with [Typescript](https://www.typescriptlang.org/) using the framework [ReactJS](https://reactjs.org/). The _map_ was made using a composition of [Leaflet](https://leafletjs.com/) library and [MapBox](https://www.mapbox.com/) API . Finally, API calls to the backend were made with [axios](https://www.npmjs.com/package/axios).
 
-## :iphone: Mobile
+### :iphone: Mobile
 
 The _mobile_ version of the application was developed with [Typescript](https://www.typescriptlang.org/) language using the framework [React Native](https://reactnative.dev/) and [Expo](https://expo.io/) to increment the speed of development.
 
@@ -70,7 +77,7 @@ Clone the repository:
   $ git clone https://github.com/paulo-carvalho93/happy-NLW.git
 ```
 
-## :hammer: Backend
+### :hammer: Backend
 
 ```sh
   # API
@@ -87,7 +94,7 @@ Clone the repository:
 ```
 
 
-## :computer: Web
+### :computer: Web
 
 ```sh
   # API
@@ -104,7 +111,7 @@ Clone the repository:
   
 ```
 
-## :iphone: Mobile
+### :iphone: Mobile
 
 
 Here, I'm assuming that you have Android/Iphone Emulator and Expo app is installed.
@@ -129,7 +136,7 @@ Your emulator needs to know where's your server and which URL it's running.
 ```
 
 
-## :memo: License
+### :memo: License
 
 This project is under MIT license. See the [LICENSE](LICENSE.md) file for more details.
 
