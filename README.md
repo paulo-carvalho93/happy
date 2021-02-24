@@ -5,8 +5,8 @@
 <p>
 
 <p align="center">	
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/paulo-carvalho93/happy-NLW">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/paulo-carvalho93/happy-NLW">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/paulo-carvalho93/happy">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/paulo-carvalho93/happy">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-blue">
   
 </p>
@@ -74,7 +74,7 @@ The _mobile_ version of the application was developed with [Typescript](https://
 Clone the repository:
 
 ```sh
-  $ git clone https://github.com/paulo-carvalho93/happy-NLW.git
+  $ git clone https://github.com/paulo-carvalho93/happy.git
 ```
 
 ### :hammer: Backend
