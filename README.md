@@ -69,7 +69,7 @@ The _mobile_ version of the application was developed with [Typescript](https://
   - It's **necessary** to have **[Node.js](https://nodejs.org/en/)** installed on the computer
   - It's **necessary** to have **[Git](https://git-scm.com/)** installed and configured on the computer
   - Also, it's **necessary** to have a package manager either **[NPM](https://www.npmjs.com/)** or **[Yarn](https://yarnpkg.com/)**.
-  - Finally, it is **essential** to have **[Expo](https://expo.io/)** installed globally on the machine for mobile propose.
+  - Finally, it is **essential** to have **[Expo](https://expo.io/)** installed globally on the machine for mobile purpose.
   
 Clone the repository:
 
